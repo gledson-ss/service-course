@@ -10,5 +10,11 @@
       "path": "/_v/app/analytics/realTime",
       "public": true
     }
+  },
+  "events": {
+    "liveUsersUpdate": {
+      "sender": "vtex.events-example",
+      "keys": ["send-event"]
+    }
   }
 }
