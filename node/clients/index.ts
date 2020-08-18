@@ -1,7 +1,7 @@
-import { IOClients } from '@vtex/api'
-
-
-// Extend the default IOClients implementation with our own custom clients.
+import Analytics from "../clients/analytics";
+import { IOClients } from "@vtex/api";
 export class Clients extends IOClients {
-
+  public get analytics() {
+    return this.getOrSet("analytics", Analytics);
+  }
 }
